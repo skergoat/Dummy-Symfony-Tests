@@ -1226,33 +1226,33 @@ Testing Project Test Suite
 Time: 1.54 seconds, Memory: 34.00 MB
 
 [30;42mOK (10 tests, 10 assertions)[0m
-bash-3.2$ git p[Kcommit -am '                                                                                                        [3;72H[?25h[2;1H[3;72H[4;67H
-[m#[6;71H[7;14H[?25l[8;1H[K[8;1H[?25h[?25lh[?25h[?25le[?25h[?25ll[?25h[?25ll[?25h[?25lo[?25h[?25l[8;5H[K[8;5H[?25h[?25l[8;4H[K[8;4H[?25h[?25l[8;3H[K[8;3H[?25h[?25l[8;2H[K[8;2H[?25h[?25l[8;1H[K[8;1H[?25h[?25l[9;1H[K[9;1H[?25h[?25lf[?25h[?25li[?25h[?25lr[?25h[?25ls[?25h[?25lt[?25h[?25l [?25h[?25lc[?25h[?25lo[?25h[?25lm[?25h[?25lm[?25h[?25li[?25h[?25lt[?25h[?25l [?25h[?25l[10;1H[K[10;1H[?25h[?25l[11;1H[K[11;1H[?25h[?25l[12;1H[K[12;1H[?25h[?25l[13;1H[K[13;1H[?25h[?25l[14;1H[K[14;1H[?25h[?25l[1;14r[14;1H
-[1;15r[14;1H[?25h[?25l[15;1H[K[14;1H[?25h[13;1H[12;1H[11;1H[10;1H[9;1H[8;1H[7;1H[6;1H[5;1H[4;1H[3;1H[2;1H[1;1H[?25l[1;14r[1;1H[L[1;15r[1;1HMerge branch 'master' of https://github.com/skergoat/Dummy-Symfony-Tests-[?25h
+bash-3.2$ git p[Kcommit -am ''s'e'c'o'n'd' 'c'o'm'm'e'n't'
+[master 47050d2] second comment
+ Committer: Stephane <stephane@MacBook-Pro-de-Stephane.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
 
+    git config --global --edit
 
+After doing this, you may fix the identity used for this commit with:
 
+    git commit --amend --reset-author
 
-
-
-
-
-
-
-
-
-[?25l[1;14r[14;1H
-[1;15r[14;1H[?25h
-
-[?2004l[?1l>[?1049l[?2004l
-[1]+  Stopped                 git pull origin master --allow-unrelated-histories
-bash-3.2$ git push origin master
+ 1 file changed, 55 insertions(+), 12 deletions(-)
+bash-3.2$ git poush[K[K[K[Kush origin master
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)   Counting objects:  40% (2/5)   Counting objects:  60% (3/5)   Counting objects:  80% (4/5)   Counting objects: 100% (5/5)   Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 713 bytes | 713.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
 To https://github.com/skergoat/Dummy-Symfony-Tests-.git
- [31m! [rejected]       [m master -> master (non-fast-forward)
-[31merror: failed to push some refs to 'https://github.com/skergoat/Dummy-Symfony-Tests-.git'
-[m[33mhint: Updates were rejected because the tip of your current branch is behind[m
-[33mhint: its remote counterpart. Integrate the remote changes (e.g.[m
-[33mhint: 'git pull ...') before pushing again.[m
+   468c201..47050d2  master -> master
+bash-3.2$ [33mhint: 'git pull ...') before pushing again.[m
 [33mhint: See the 'Note about fast-forwards' in 'git push --help' for details.[m
 bash-3.2$ git add . 
 bash-3.2$ git commit -am ''c'o'm'm'i't'
@@ -1308,4 +1308,39 @@ Total 3 (delta 2), reused 0 (delta 0)
 remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
 To https://github.com/skergoat/Dummy-Symfony-Tests-.git
    5bd3394..468c201  master -> master
-bash-3.2$ 
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+..........                                                        10 / 10 (100%)
+
+Time: 1.54 seconds, Memory: 34.00 MB
+
+[30;42mOK (10 tests, 10 assertions)[0m
+bash-3.2$ git p[Kcommit -am ''s'e'c'o'n'd' 'c'o'm'm'e'n't'
+[master 47050d2] second comment
+ Committer: Stephane <stephane@MacBook-Pro-de-Stephane.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 55 insertions(+), 12 deletions(-)
+bash-3.2$ git poush[K[K[K[Kush origin master
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)   Counting objects:  40% (2/5)   Counting objects:  60% (3/5)   Counting objects:  80% (4/5)   Counting objects: 100% (5/5)   Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 713 bytes | 713.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/skergoat/Dummy-Symfony-Tests-.git
+   468c201..47050d2  master -> master
+bash-3.2$ bin/phpuni

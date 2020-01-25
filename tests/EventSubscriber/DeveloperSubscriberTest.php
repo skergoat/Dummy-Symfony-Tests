@@ -9,6 +9,7 @@ class DeveloperSubscriberTest extends WebTestCase
 
     private $event;
 
+    // set up parameters 
     public function setUp()
     {
         $this->event = $this->getMockBuilder('Symfony\Component\HttpKernel\Event\ExceptionEvent')
@@ -22,6 +23,7 @@ class DeveloperSubscriberTest extends WebTestCase
                                 ->getMock();
     }
 
+    // run tests 
     public function testOnKernelException()
     {
         $event = $this->event->method("getThrowable")->willReturn($this->throwable);
@@ -30,6 +32,7 @@ class DeveloperSubscriberTest extends WebTestCase
         $subscriber = new DeveloperSubscriber();
         $subscriber->onKernelException($this->event);
         
+        // return if event response = jsonResponse 
         $this->assertEquals('Symfony\Component\HttpFoundation\JsonResponse', get_class($this->event->getResponse()));
     }
 }
