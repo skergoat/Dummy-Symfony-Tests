@@ -39,7 +39,9 @@ My first unit and fonctionnal tests on Symfony 5
 8. Go to vendor > symfony http-kernel > ExceptionEvent.php and change : 
 
    add annotation : @final
+   
    remove : final class ExceptionEvent extends RequestEvent
+   
    add : class ExceptionEvent extends RequestEvent
      
 9. And then : 
