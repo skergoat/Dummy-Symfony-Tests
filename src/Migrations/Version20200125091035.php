@@ -10,7 +10,7 @@ use Doctrine\Migrations\AbstractMigration;
 /**
  * Auto-generated Migration: Please modify to your needs!
  */
-final class Version20200124103555 extends AbstractMigration
+final class Version20200125091035 extends AbstractMigration
 {
     public function getDescription() : string
     {
@@ -22,8 +22,10 @@ final class Version20200124103555 extends AbstractMigration
         // this up() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'sqlite', 'Migration can only be executed safely on \'sqlite\'.');
 
-        $this->addSql('CREATE TABLE biography (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL)');
-        $this->addSql('ALTER TABLE developer ADD COLUMN biography CLOB DEFAULT NULL');
+        $this->addSql('CREATE TABLE user (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, username VARCHAR(180) NOT NULL, roles CLOB NOT NULL --(DC2Type:json)
+        , password VARCHAR(255) NOT NULL)');
+        $this->addSql('CREATE UNIQUE INDEX UNIQ_8D93D649F85E0677 ON user (username)');
+        $this->addSql('CREATE TABLE developer (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, name VARCHAR(255) DEFAULT NULL, languages VARCHAR(255) DEFAULT NULL, price VARCHAR(255) DEFAULT NULL, experience INTEGER DEFAULT NULL, biography CLOB DEFAULT NULL)');
     }
 
     public function down(Schema $schema) : void
@@ -31,11 +33,7 @@ final class Version20200124103555 extends AbstractMigration
         // this down() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'sqlite', 'Migration can only be executed safely on \'sqlite\'.');
 
-        $this->addSql('DROP TABLE biography');
-        $this->addSql('CREATE TEMPORARY TABLE __temp__developer AS SELECT id, name, languages, price, experience FROM developer');
+        $this->addSql('DROP TABLE user');
         $this->addSql('DROP TABLE developer');
-        $this->addSql('CREATE TABLE developer (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, name VARCHAR(255) DEFAULT NULL, languages VARCHAR(255) DEFAULT NULL, price VARCHAR(255) DEFAULT NULL, experience INTEGER DEFAULT NULL)');
-        $this->addSql('INSERT INTO developer (id, name, languages, price, experience) SELECT id, name, languages, price, experience FROM __temp__developer');
-        $this->addSql('DROP TABLE __temp__developer');
     }
 }
