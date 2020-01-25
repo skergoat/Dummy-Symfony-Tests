@@ -1,0 +1,1426 @@
+Script started on Sat Jan 25 14:41:27 2020
+[?1034hbash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...[33;1mR[0m......                                                        10 / 10 (100%)
+
+Time: 653 ms, Memory: 34.00 MB
+
+There was 1 risky test:
+
+1) DeveloperSubscriberTest::testOnKernelException
+This test did not perform any assertions
+
+/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:25
+
+[30;43mOK, but incomplete, skipped, or risky tests![0m
+[30;43mTests: 10[0m[30;43m, Assertions: 9[0m[30;43m, Risky: 1[0m[30;43m.[0m
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...DeveloperSubscriber.php on line 21:
+Mock_ExceptionEvent_5e8b77bf {#4521
+  -__phpunit_invocationMocker: PHPUnit\Framework\MockObject\InvocationMocker {#4514
+    -matchers: array:1 [
+      0 => PHPUnit\Framework\MockObject\Matcher {#4528
+        -invocationMatcher: PHPUnit\Framework\MockObject\Matcher\AnyInvokedCount {#4532
+          -invocations: array:1 [
+            0 => PHPUnit\Framework\MockObject\Invocation\ObjectInvocation {#4533
+              -object: Mock_ExceptionEvent_5e8b77bf {#4521}
+              -className: "Symfony\Component\HttpKernel\Event\ExceptionEvent"
+              -methodName: "getThrowable"
+              -parameters: []
+              -returnType: "Throwable"
+              -isReturnTypeNullable: false
+              -proxiedCall: false
+            }
+          ]
+        }
+        -afterMatchBuilderId: null
+        -afterMatchBuilderIsInvoked: false
+        -methodNameMatcher: PHPUnit\Framework\MockObject\Matcher\MethodName {#4516
+          -constraint: PHPUnit\Framework\Constraint\IsEqual {#4504
+            -value: "getThrowable"
+            -delta: 0.0
+            -maxDepth: 10
+            -canonicalize: false
+            -ignoreCase: true
+            #exporter: SebastianBergmann\Exporter\Exporter {#4530}
+          }
+        }
+        -parametersMatcher: null
+        -stub: PHPUnit\Framework\MockObject\Stub\ReturnStub {#4510 …1}
+      }
+    ]
+    -builderMap: []
+    -configurableMethods: array:1 [
+      0 => "getthrowable"
+    ]
+    -returnValueGeneration: true
+  }
+  -__phpunit_originalObject: null
+  -__phpunit_configurable: array:1 [
+    0 => "getthrowable"
+  ]
+  -__phpunit_returnValueGeneration: true
+  -throwable: null
+  -allowCustomResponseCode: false
+  -response: Symfony\Component\HttpFoundation\JsonResponse {#4526
+    #data: "{"status":404,"message":"Resource not found"}"
+    #callback: null
+    #encodingOptions: 15
+    +headers: Symfony\Component\HttpFoundation\ResponseHeaderBag {#1119
+      #computedCacheControl: array:2 [
+        "no-cache" => true
+        "private" => true
+      ]
+      #cookies: []
+      #headerNames: array:3 [
+        "cache-control" => "Cache-Control"
+        "date" => "Date"
+        "content-type" => "Content-Type"
+      ]
+      #headers: array:3 [
+        "cache-control" => array:1 [
+          0 => "no-cache, private"
+        ]
+        "date" => array:1 [
+          0 => "Sat, 25 Jan 2020 07:43:28 GMT"
+        ]
+        "content-type" => array:1 [
+          0 => "application/json"
+        ]
+      ]
+      #cacheControl: []
+    }
+    #content: "{"status":404,"message":"Resource not found"}"
+    #version: "1.0"
+    #statusCode: 200
+    #statusText: "OK"
+    #charset: null
+  }
+  -kernel: null
+  -request: null
+  -requestType: null
+  -propagationStopped: true
+}
+bash-3.2$ bin/phpini[K[K[Kunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...DeveloperSubscriber.php on line 21:
+Mock_ExceptionEvent_dd92cf3c {#4521
+  -__phpunit_invocationMocker: PHPUnit\Framework\MockObject\InvocationMocker {#4514
+    -matchers: array:1 [
+      0 => PHPUnit\Framework\MockObject\Matcher {#4528
+        -invocationMatcher: PHPUnit\Framework\MockObject\Matcher\AnyInvokedCount {#4532
+          -invocations: array:1 [
+            0 => PHPUnit\Framework\MockObject\Invocation\ObjectInvocation {#4533
+              -object: Mock_ExceptionEvent_dd92cf3c {#4521}
+              -className: "Symfony\Component\HttpKernel\Event\ExceptionEvent"
+              -methodName: "getThrowable"
+              -parameters: []
+              -returnType: "Throwable"
+              -isReturnTypeNullable: false
+              -proxiedCall: false
+            }
+          ]
+        }
+        -afterMatchBuilderId: null
+        -afterMatchBuilderIsInvoked: false
+        -methodNameMatcher: PHPUnit\Framework\MockObject\Matcher\MethodName {#4516
+          -constraint: PHPUnit\Framework\Constraint\IsEqual {#4504
+            -value: "getThrowable"
+            -delta: 0.0
+            -maxDepth: 10
+            -canonicalize: false
+            -ignoreCase: true
+            #exporter: SebastianBergmann\Exporter\Exporter {#4530}
+          }
+        }
+        -parametersMatcher: null
+        -stub: PHPUnit\Framework\MockObject\Stub\ReturnStub {#4510 …1}
+      }
+    ]
+    -builderMap: []
+    -configurableMethods: array:1 [
+      0 => "getthrowable"
+    ]
+    -returnValueGeneration: true
+  }
+  -__phpunit_originalObject: null
+  -__phpunit_configurable: array:1 [
+    0 => "getthrowable"
+  ]
+  -__phpunit_returnValueGeneration: true
+  -throwable: null
+  -allowCustomResponseCode: false
+  -response: Symfony\Component\HttpFoundation\JsonResponse {#4526
+    #data: "{"status":404,"message":"Resource not found"}"
+    #callback: null
+    #encodingOptions: 15
+    +headers: Symfony\Component\HttpFoundation\ResponseHeaderBag {#1119
+      #computedCacheControl: array:2 [
+        "no-cache" => true
+        "private" => true
+      ]
+      #cookies: []
+      #headerNames: array:3 [
+        "cache-control" => "Cache-Control"
+        "date" => "Date"
+        "content-type" => "Content-Type"
+      ]
+      #headers: array:3 [
+        "cache-control" => array:1 [
+          0 => "no-cache, private"
+        ]
+        "date" => array:1 [
+          0 => "Sat, 25 Jan 2020 07:43:45 GMT"
+        ]
+        "content-type" => array:1 [
+          0 => "application/json"
+        ]
+      ]
+      #cacheControl: []
+    }
+    #content: "{"status":404,"message":"Resource not found"}"
+    #version: "1.0"
+    #statusCode: 200
+    #statusText: "OK"
+    #charset: null
+  }
+  -kernel: null
+  -request: null
+  -requestType: null
+  -propagationStopped: true
+}
+bash-3.2$ binp[K/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...[33;1mR[0m......                                                        10 / 10 (100%)
+
+Time: 645 ms, Memory: 34.00 MB
+
+There was 1 risky test:
+
+1) DeveloperSubscriberTest::testOnKernelException
+This test did not perform any assertions
+
+/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:25
+
+[30;43mOK, but incomplete, skipped, or risky tests![0m
+[30;43mTests: 10[0m[30;43m, Assertions: 9[0m[30;43m, Risky: 1[0m[30;43m.[0m
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...DeveloperSubscriber.php on line 21:
+Symfony\Component\HttpFoundation\JsonResponse {#4526
+  #data: "{"status":404,"message":"Resource not found"}"
+  #callback: null
+  #encodingOptions: 15
+  +headers: Symfony\Component\HttpFoundation\ResponseHeaderBag {#1119
+    #computedCacheControl: array:2 [
+      "no-cache" => true
+      "private" => true
+    ]
+    #cookies: []
+    #headerNames: array:3 [
+      "cache-control" => "Cache-Control"
+      "date" => "Date"
+      "content-type" => "Content-Type"
+    ]
+    #headers: array:3 [
+      "cache-control" => array:1 [
+        0 => "no-cache, private"
+      ]
+      "date" => array:1 [
+        0 => "Sat, 25 Jan 2020 07:46:57 GMT"
+      ]
+      "content-type" => array:1 [
+        0 => "application/json"
+      ]
+    ]
+    #cacheControl: []
+  }
+  #content: "{"status":404,"message":"Resource not found"}"
+  #version: "1.0"
+  #statusCode: 200
+  #statusText: "OK"
+  #charset: null
+}
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...[33;1mR[0m......                                                        10 / 10 (100%)
+
+Time: 644 ms, Memory: 34.00 MB
+
+There was 1 risky test:
+
+1) DeveloperSubscriberTest::testOnKernelException
+This test did not perform any assertions
+
+/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:25
+
+[30;43mOK, but incomplete, skipped, or risky tests![0m
+[30;43mTests: 10[0m[30;43m, Assertions: 9[0m[30;43m, Risky: 1[0m[30;43m.[0m
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...[33;1mR[0m......                                                        10 / 10 (100%)
+
+Time: 654 ms, Memory: 34.00 MB
+
+There was 1 risky test:
+
+1) DeveloperSubscriberTest::testOnKernelException
+This test did not perform any assertions
+
+/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:25
+
+[30;43mOK, but incomplete, skipped, or risky tests![0m
+[30;43mTests: 10[0m[30;43m, Assertions: 9[0m[30;43m, Risky: 1[0m[30;43m.[0m
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...[31;1mE[0m......                                                        10 / 10 (100%)
+
+Time: 641 ms, Memory: 34.00 MB
+
+There was 1 error:
+
+1) DeveloperSubscriberTest::testOnKernelException
+Error: Call to undefined method DeveloperSubscriberTest::filter()
+
+/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:33
+
+[37;41mERRORS![0m
+[37;41mTests: 10[0m[37;41m, Assertions: 9[0m[37;41m, Errors: 1[0m[37;41m.[0m
+bash-3.2$ bin/hp[K[K[K/p[hp[K[K[K[Kphpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...DeveloperSubscriber.php on line 21:
+Symfony\Component\HttpFoundation\JsonResponse {#4526
+  #data: "{"status":404,"message":"Resource not found"}"
+  #callback: null
+  #encodingOptions: 15
+  +headers: Symfony\Component\HttpFoundation\ResponseHeaderBag {#1119
+    #computedCacheControl: array:2 [
+      "no-cache" => true
+      "private" => true
+    ]
+    #cookies: []
+    #headerNames: array:3 [
+      "cache-control" => "Cache-Control"
+      "date" => "Date"
+      "content-type" => "Content-Type"
+    ]
+    #headers: array:3 [
+      "cache-control" => array:1 [
+        0 => "no-cache, private"
+      ]
+      "date" => array:1 [
+        0 => "Sat, 25 Jan 2020 07:52:07 GMT"
+      ]
+      "content-type" => array:1 [
+        0 => "application/json"
+      ]
+    ]
+    #cacheControl: []
+  }
+  #content: "{"status":404,"message":"Resource not found"}"
+  #version: "1.0"
+  #statusCode: 200
+  #statusText: "OK"
+  #charset: null
+}
+bash-3.2$ i[Kbin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...[31;1mE[0m......                                                        10 / 10 (100%)
+
+Time: 648 ms, Memory: 34.00 MB
+
+There was 1 error:
+
+1) DeveloperSubscriberTest::testOnKernelException
+get_class() expects parameter 1 to be object, null given
+
+/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:33
+
+[37;41mERRORS![0m
+[37;41mTests: 10[0m[37;41m, Assertions: 9[0m[37;41m, Errors: 1[0m[37;41m.[0m
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...DeveloperSubscriberTest.php on line 33:
+null
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...DeveloperSubscriberTest.php on line 28:
+PHPUnit\Framework\MockObject\Builder\InvocationMocker {#4518
+  -collection: PHPUnit\Framework\MockObject\InvocationMocker {#4514
+    -matchers: array:1 [
+      0 => PHPUnit\Framework\MockObject\Matcher {#4528
+        -invocationMatcher: PHPUnit\Framework\MockObject\Matcher\AnyInvokedCount {#4532
+          -invocations: []
+        }
+        -afterMatchBuilderId: null
+        -afterMatchBuilderIsInvoked: false
+        -methodNameMatcher: PHPUnit\Framework\MockObject\Matcher\MethodName {#4516
+          -constraint: PHPUnit\Framework\Constraint\IsEqual {#4504
+            -value: "getThrowable"
+            -delta: 0.0
+            -maxDepth: 10
+            -canonicalize: false
+            -ignoreCase: true
+            #exporter: SebastianBergmann\Exporter\Exporter {#4530}
+          }
+        }
+        -parametersMatcher: null
+        -stub: PHPUnit\Framework\MockObject\Stub\ReturnStub {#4510 …1}
+      }
+    ]
+    -builderMap: []
+    -configurableMethods: array:1 [
+      0 => "getthrowable"
+    ]
+    -returnValueGeneration: true
+  }
+  -matcher: PHPUnit\Framework\MockObject\Matcher {#4528}
+  -configurableMethods: array:1 [
+    0 => "getthrowable"
+  ]
+}
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...DeveloperSubscriberTest.php on line 28:
+Mock_NotFoundHttpException_02d7df59 {#4513
+  -__phpunit_invocationMocker: null
+  -__phpunit_originalObject: null
+  -__phpunit_configurable: array:1 [
+    0 => "getstatuscode"
+  ]
+  -__phpunit_returnValueGeneration: true
+  -statusCode: null
+  -headers: null
+  #message: ""
+  #code: 0
+  #file: "./vendor/doctrine/instantiator/src/Doctrine/Instantiator/Instantiator.php"
+  #line: 73
+  trace: {
+    ./vendor/doctrine/instantiator/src/Doctrine/Instantiator/Instantiator.php:73 { …}
+    ./vendor/doctrine/instantiator/src/Doctrine/Instantiator/Instantiator.php:62 { …}
+    ./bin/.phpunit/phpunit-7.5-0/src/Framework/MockObject/Generator.php:615 {
+      PHPUnit\Framework\MockObject\Generator->getObject($code, $className, $type = '', $callOriginalConstructor = false, $callAutoload = false, array $arguments = [], $callOriginalMethods = false, $proxyTarget = null, $returnValueGeneration = true)
+      ›     $instantiator = new Instantiator;
+      ›     $object       = $instantiator->instantiate($className);
+      › } catch (InstantiatorException $exception) {
+      arguments: {
+        $className: "Mock_NotFoundHttpException_02d7df59"
+      }
+    }
+    ./bin/.phpunit/phpunit-7.5-0/src/Framework/MockObject/Generator.php:200 { …}
+    ./bin/.phpunit/phpunit-7.5-0/src/Framework/MockObject/MockBuilder.php:123 { …}
+    ./tests/EventSubscriber/DeveloperSubscriberTest.php:22 { …}
+    ./bin/.phpunit/phpunit-7.5-0/src/Framework/TestCase.php:839 { …}
+    ./bin/.phpunit/phpunit-7.5-0/src/Framework/TestResult.php:693 { …}
+    ./bin/.phpunit/phpunit-7.5-0/src/Framework/TestCase.php:797 { …}
+    ./bin/.phpunit/phpunit-7.5-0/src/Framework/TestSuite.php:746 { …}
+    ./bin/.phpunit/phpunit-7.5-0/src/Framework/TestSuite.php:746 { …}
+    ./bin/.phpunit/phpunit-7.5-0/src/TextUI/TestRunner.php:652 { …}
+    ./bin/.phpunit/phpunit-7.5-0/src/TextUI/Command.php:206 { …}
+    ./bin/.phpunit/phpunit-7.5-0/src/TextUI/Command.php:162 { …}
+    ./bin/.phpunit/phpunit-7.5-0/phpunit:17 { …}
+    ./vendor/symfony/phpunit-bridge/bin/simple-phpunit.php:302 { …}
+    ./bin/phpunit:13 { …}
+  }
+}
+bash-3.2$ dd[K[Kbin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...DeveloperSubscriberTest.php on line 29:
+PHPUnit\Framework\MockObject\Builder\InvocationMocker {#4503
+  -collection: PHPUnit\Framework\MockObject\InvocationMocker {#4531
+    -matchers: array:1 [
+      0 => PHPUnit\Framework\MockObject\Matcher {#4506
+        -invocationMatcher: PHPUnit\Framework\MockObject\Matcher\AnyInvokedCount {#4507
+          -invocations: []
+        }
+        -afterMatchBuilderId: null
+        -afterMatchBuilderIsInvoked: false
+        -methodNameMatcher: PHPUnit\Framework\MockObject\Matcher\MethodName {#4508
+          -constraint: PHPUnit\Framework\Constraint\IsEqual {#4522
+            -value: "getStatusCode"
+            -delta: 0.0
+            -maxDepth: 10
+            -canonicalize: false
+            -ignoreCase: true
+            #exporter: SebastianBergmann\Exporter\Exporter {#4517}
+          }
+        }
+        -parametersMatcher: null
+        -stub: PHPUnit\Framework\MockObject\Stub\ReturnStub {#4533 …1}
+      }
+    ]
+    -builderMap: []
+    -configurableMethods: array:1 [
+      0 => "getstatuscode"
+    ]
+    -returnValueGeneration: true
+  }
+  -matcher: PHPUnit\Framework\MockObject\Matcher {#4506}
+  -configurableMethods: array:1 [
+    0 => "getstatuscode"
+  ]
+}
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...[31;1mE[0m......                                                        10 / 10 (100%)
+
+Time: 656 ms, Memory: 34.00 MB
+
+There was 1 error:
+
+1) DeveloperSubscriberTest::testOnKernelException
+TypeError: Argument 1 passed to App\EventSubscriber\DeveloperSubscriber::onKernelException() must be an instance of Symfony\Component\HttpKernel\Event\ExceptionEvent, string given, called in /Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php on line 31
+
+/Users/stephane/Desktop/tests/src/EventSubscriber/DeveloperSubscriber.php:11
+/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:31
+
+[37;41mERRORS![0m
+[37;41mTests: 10[0m[37;41m, Assertions: 9[0m[37;41m, Errors: 1[0m[37;41m.[0m
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...[31;1mE[0m......                                                        10 / 10 (100%)
+
+Time: 657 ms, Memory: 34.00 MB
+
+There was 1 error:
+
+1) DeveloperSubscriberTest::testOnKernelException
+Use of undefined constant ExceptionEvent - assumed 'ExceptionEvent' (this will throw an Error in a future version of PHP)
+
+/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:31
+
+[37;41mERRORS![0m
+[37;41mTests: 10[0m[37;41m, Assertions: 9[0m[37;41m, Errors: 1[0m[37;41m.[0m
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...[31;1mE[0m......                                                        10 / 10 (100%)
+
+Time: 647 ms, Memory: 34.00 MB
+
+There was 1 error:
+
+1) DeveloperSubscriberTest::testOnKernelException
+get_class() expects parameter 1 to be object, null given
+
+/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:33
+
+[37;41mERRORS![0m
+[37;41mTests: 10[0m[37;41m, Assertions: 9[0m[37;41m, Errors: 1[0m[37;41m.[0m
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...[31;1mE[0m......                                                        10 / 10 (100%)
+
+Time: 649 ms, Memory: 34.00 MB
+
+There was 1 error:
+
+1) DeveloperSubscriberTest::testOnKernelException
+get_class() expects parameter 1 to be object, null given
+
+/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:33
+
+[37;41mERRORS![0m
+[37;41mTests: 10[0m[37;41m, Assertions: 9[0m[37;41m, Errors: 1[0m[37;41m.[0m
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...[31;1mE[0m......                                                        10 / 10 (100%)
+
+Time: 642 ms, Memory: 34.00 MB
+
+There was 1 error:
+
+1) DeveloperSubscriberTest::testOnKernelException
+get_class() expects parameter 1 to be object, null given
+
+/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:33
+
+[37;41mERRORS![0m
+[37;41mTests: 10[0m[37;41m, Assertions: 9[0m[37;41m, Errors: 1[0m[37;41m.[0m
+bash-3.2$ bo[Ko[Kin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...[41;37mF[0m......                                                        10 / 10 (100%)
+
+Time: 651 ms, Memory: 34.00 MB
+
+There was 1 failure:
+
+1) DeveloperSubscriberTest::testOnKernelException
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'Symfony\Component\HttpFoundation\JsonResponse'
++'Mock_ExceptionEvent_99f27133'
+
+/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:33
+
+[37;41mFAILURES![0m
+[37;41mTests: 10[0m[37;41m, Assertions: 10[0m[37;41m, Failures: 1[0m[37;41m.[0m
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...[31;1mE[0m......                                                        10 / 10 (100%)
+
+Time: 666 ms, Memory: 34.00 MB
+
+There was 1 error:
+
+1) DeveloperSubscriberTest::testOnKernelException
+get_class() expects parameter 1 to be object, null given
+
+/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:33
+
+[37;41mERRORS![0m
+[37;41mTests: 10[0m[37;41m, Assertions: 9[0m[37;41m, Errors: 1[0m[37;41m.[0m
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+..........                                                        10 / 10 (100%)
+
+Time: 890 ms, Memory: 34.00 MB
+
+[30;42mOK (10 tests, 10 assertions)[0m
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...DeveloperSubscriberTest.php on line 32:
+Symfony\Component\HttpFoundation\JsonResponse {#4502
+  #data: "{}"
+  #callback: null
+  #encodingOptions: 15
+  +headers: Symfony\Component\HttpFoundation\ResponseHeaderBag {#1117
+    #computedCacheControl: array:2 [
+      "no-cache" => true
+      "private" => true
+    ]
+    #cookies: []
+    #headerNames: array:3 [
+      "cache-control" => "Cache-Control"
+      "date" => "Date"
+      "content-type" => "Content-Type"
+    ]
+    #headers: array:3 [
+      "cache-control" => array:1 [
+        0 => "no-cache, private"
+      ]
+      "date" => array:1 [
+        0 => "Sat, 25 Jan 2020 08:02:44 GMT"
+      ]
+      "content-type" => array:1 [
+        0 => "application/json"
+      ]
+    ]
+    #cacheControl: []
+  }
+  #content: "{}"
+  #version: "1.0"
+  #statusCode: 200
+  #statusText: "OK"
+  #charset: null
+}
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+..........                                                        10 / 10 (100%)
+
+Time: 651 ms, Memory: 34.00 MB
+
+[30;42mOK (10 tests, 10 assertions)[0m
+bash-3.2$ bin/hpp[K[K[Kphpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...[41;37mF[0m......                                                        10 / 10 (100%)
+
+Time: 667 ms, Memory: 34.00 MB
+
+There was 1 failure:
+
+1) DeveloperSubscriberTest::testOnKernelException
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'Symfony\Component\HttpKernel\Event\ExceptionEvent'
++'Mock_ExceptionEvent_987e8790'
+
+/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:33
+
+[37;41mFAILURES![0m
+[37;41mTests: 10[0m[37;41m, Assertions: 10[0m[37;41m, Failures: 1[0m[37;41m.[0m
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...[41;37mF[0m......                                                        10 / 10 (100%)
+
+Time: 648 ms, Memory: 34.00 MB
+
+There was 1 failure:
+
+1) DeveloperSubscriberTest::testOnKernelException
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'Mock_ExceptionEvent_987e8790'
++'Mock_ExceptionEvent_a0c6e190'
+
+/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:33
+
+[37;41mFAILURES![0m
+[37;41mTests: 10[0m[37;41m, Assertions: 10[0m[37;41m, Failures: 1[0m[37;41m.[0m
+bash-3.2$ ph[K[Kbin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+..........                                                        10 / 10 (100%)
+
+Time: 655 ms, Memory: 34.00 MB
+
+[30;42mOK (10 tests, 10 assertions)[0m
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...[31;1mE[0m......                                                        10 / 10 (100%)
+
+Time: 665 ms, Memory: 34.00 MB
+
+There was 1 error:
+
+1) DeveloperSubscriberTest::testOnKernelException
+get_class() expects parameter 1 to be object, null given
+
+/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:33
+
+[37;41mERRORS![0m
+[37;41mTests: 10[0m[37;41m, Assertions: 9[0m[37;41m, Errors: 1[0m[37;41m.[0m
+bash-3.2$ hp[K[Kphpunit[K[K[K[K[K[K[Kbin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...DeveloperSubscriberTest.php on line 33:
+null
+bash-3.2$ bin /phpunit
+bash: bin: command not found
+bash-3.2$ n[Kbin/phpunit
+PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ')' in /Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php on line 31
+
+Parse error: syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ')' in /Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php on line 31
+
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...DeveloperSubscriberTest.php on line 31:
+null
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...[33;1mR[0m......                                                        10 / 10 (100%)
+
+Time: 668 ms, Memory: 34.00 MB
+
+There was 1 risky test:
+
+1) DeveloperSubscriberTest::testOnKernelException
+This test did not perform any assertions
+
+/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:25
+
+[30;43mOK, but incomplete, skipped, or risky tests![0m
+[30;43mTests: 10[0m[30;43m, Assertions: 9[0m[30;43m, Risky: 1[0m[30;43m.[0m
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...DeveloperSubscriberTest.php on line 31:
+null
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...DeveloperSubscriberTest.php on line 31:
+Symfony\Component\HttpFoundation\JsonResponse {#4502
+  #data: "{"status":404,"message":"Resource not found"}"
+  #callback: null
+  #encodingOptions: 15
+  +headers: Symfony\Component\HttpFoundation\ResponseHeaderBag {#1117
+    #computedCacheControl: array:2 [
+      "no-cache" => true
+      "private" => true
+    ]
+    #cookies: []
+    #headerNames: array:3 [
+      "cache-control" => "Cache-Control"
+      "date" => "Date"
+      "content-type" => "Content-Type"
+    ]
+    #headers: array:3 [
+      "cache-control" => array:1 [
+        0 => "no-cache, private"
+      ]
+      "date" => array:1 [
+        0 => "Sat, 25 Jan 2020 08:08:16 GMT"
+      ]
+      "content-type" => array:1 [
+        0 => "application/json"
+      ]
+    ]
+    #cacheControl: []
+  }
+  #content: "{"status":404,"message":"Resource not found"}"
+  #version: "1.0"
+  #statusCode: 200
+  #statusText: "OK"
+  #charset: null
+}
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...DeveloperSubscriberTest.php on line 31:
+Symfony\Component\HttpFoundation\JsonResponse {#4502
+  #data: "{"status":404,"message":"Resource not found"}"
+  #callback: null
+  #encodingOptions: 15
+  +headers: Symfony\Component\HttpFoundation\ResponseHeaderBag {#1117
+    #computedCacheControl: array:2 [
+      "no-cache" => true
+      "private" => true
+    ]
+    #cookies: []
+    #headerNames: array:3 [
+      "cache-control" => "Cache-Control"
+      "date" => "Date"
+      "content-type" => "Content-Type"
+    ]
+    #headers: array:3 [
+      "cache-control" => array:1 [
+        0 => "no-cache, private"
+      ]
+      "date" => array:1 [
+        0 => "Sat, 25 Jan 2020 08:08:58 GMT"
+      ]
+      "content-type" => array:1 [
+        0 => "application/json"
+      ]
+    ]
+    #cacheControl: []
+  }
+  #content: "{"status":404,"message":"Resource not found"}"
+  #version: "1.0"
+  #statusCode: 200
+  #statusText: "OK"
+  #charset: null
+}
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+..........                                                        10 / 10 (100%)
+
+Time: 667 ms, Memory: 34.00 MB
+
+[30;42mOK (10 tests, 10 assertions)[0m
+bash-3.2$ bin/phpunit --filter=testOnKernelException > public resultTest.html
+bash: public: Is a directory
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+..........                                                        10 / 10 (100%)
+
+Time: 665 ms, Memory: 34.00 MB
+
+[30;42mOK (10 tests, 10 assertions)[0m
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...DeveloperSubscriberTest.php on line 33:
+Symfony\Component\HttpFoundation\JsonResponse {#4502
+  #data: "{"status":404,"message":"Resource not found"}"
+  #callback: null
+  #encodingOptions: 15
+  +headers: Symfony\Component\HttpFoundation\ResponseHeaderBag {#1117
+    #computedCacheControl: array:2 [
+      "no-cache" => true
+      "private" => true
+    ]
+    #cookies: []
+    #headerNames: array:3 [
+      "cache-control" => "Cache-Control"
+      "date" => "Date"
+      "content-type" => "Content-Type"
+    ]
+    #headers: array:3 [
+      "cache-control" => array:1 [
+        0 => "no-cache, private"
+      ]
+      "date" => array:1 [
+        0 => "Sat, 25 Jan 2020 08:12:09 GMT"
+      ]
+      "content-type" => array:1 [
+        0 => "application/json"
+      ]
+    ]
+    #cacheControl: []
+  }
+  #content: "{"status":404,"message":"Resource not found"}"
+  #version: "1.0"
+  #statusCode: 200
+  #statusText: "OK"
+  #charset: null
+}
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+..........                                                        10 / 10 (100%)
+
+Time: 670 ms, Memory: 34.00 MB
+
+[30;42mOK (10 tests, 10 assertions)[0m
+bash-3.2$ ./bin/.phpunit/phpunit-7.5-0/src/Framework/MockObject/MockBuilder.php:123 { …}
+    ./tests/EventSubscriber/DeveloperSubscriberTest.php:22 { …}
+    ./bin/.phpunit/phpunit-7.5-0/src/Framework/TestCase.php:839 { …}
+    ./bin/.phpunit/phpunit-7.5-0/src/Framework/TestResult.php:693 { …}
+    ./bin/.phpunit/phpunit-7.5-0/src/Framework/TestCase.php:797 { …}
+    ./bin/.phpunit/phpunit-7.5-0/src/Framework/TestSuite.php:746 { …}
+    ./bin/.phpunit/phpunit-7.5-0/src/Framework/TestSuite.php:746 { …}
+    ./bin/.phpunit/phpunit-7.5-0/src/TextUI/TestRunner.php:652 { …}
+    ./bin/.phpunit/phpunit-7.5-0/src/TextUI/Command.php:206 { …}
+    ./bin/.phpunit/phpunit-7.5-0/src/TextUI/Command.php:162 { …}
+    ./bin/.phpunit/phpunit-7.5-0/phpunit:17 { …}
+    ./vendor/symfony/phpunit-bridge/bin/simple-phpunit.php:302 { …}
+    ./bin/phpunit:13 { …}
+  }
+}
+bash-3.2$ dd[K[Kbin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...DeveloperSubscriberTest.php on line 29:
+PHPUnit\Framework\MockObject\Builder\InvocationMocker {#4503
+  -collection: PHPUnit\Framework\MockObject\InvocationMocker {#4531
+    -matchers: array:1 [
+      0 => PHPUnit\Framework\MockObject\Matcher {#4506
+        -invocationMatcher: PHPUnit\Framework\MockObject\Matcher\AnyInvokedCount {#4507
+          -invocations: []
+        }
+        -afterMatchBuilderId: null
+        -afterMatchBuilderIsInvoked: false
+        -methodNameMatcher: PHPUnit\Framework\MockObject\Matcher\MethodName {#4508
+          -constraint: PHPUnit\Framework\Constraint\IsEqual {#4522
+            -value: "getStatusCode"
+            -delta: 0.0
+            -maxDepth: 10
+            -canonicalize: false
+            -ignoreCase: true
+            #exporter: SebastianBergmann\Exporter\Exporter {#4517}
+          }
+        }
+        -parametersMatcher: null
+        -stub: PHPUnit\Framework\MockObject\Stub\ReturnStub {#4533 …1}
+      }
+    ]
+    -builderMap: []
+    -configurableMethods: array:1 [
+      0 => "getstatuscode"
+    ]
+    -returnValueGeneration: true
+  }
+  -matcher: PHPUnit\Framework\MockObject\Matcher {#4506}
+  -configurableMethods: array:1 [
+    0 => "getstatuscode"
+  ]
+}
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...[31;1mE[0m......                                                        10 / 10 (100%)
+
+Time: 656 ms, Memory: 34.00 MB
+
+There was 1 error:
+
+1) DeveloperSubscriberTest::testOnKernelException
+TypeError: Argument 1 passed to App\EventSubscriber\DeveloperSubscriber::onKernelException() must be an instance of Symfony\Component\HttpKernel\Event\ExceptionEvent, string given, called in /Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php on line 31
+
+/Users/stephane/Desktop/tests/src/EventSubscriber/DeveloperSubscriber.php:11
+/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:31
+
+[37;41mERRORS![0m
+[37;41mTests: 10[0m[37;41m, Assertions: 9[0m[37;41m, Errors: 1[0m[37;41m.[0m
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...[31;1mE[0m......                                                        10 / 10 (100%)
+
+Time: 657 ms, Memory: 34.00 MB
+
+There was 1 error:
+
+1) DeveloperSubscriberTest::testOnKernelException
+Use of undefined constant ExceptionEvent - assumed 'ExceptionEvent' (this will throw an Error in a future version of PHP)
+
+/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:31
+
+[37;41mERRORS![0m
+[37;41mTests: 10[0m[37;41m, Assertions: 9[0m[37;41m, Errors: 1[0m[37;41m.[0m
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...[31;1mE[0m......                                                        10 / 10 (100%)
+
+Time: 647 ms, Memory: 34.00 MB
+
+There was 1 error:
+
+1) DeveloperSubscriberTest::testOnKernelException
+get_class() expects parameter 1 to be object, null given
+
+/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:33
+
+[37;41mERRORS![0m
+[37;41mTests: 10[0m[37;41m, Assertions: 9[0m[37;41m, Errors: 1[0m[37;41m.[0m
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...[31;1mE[0m......                                                        10 / 10 (100%)
+
+Time: 649 ms, Memory: 34.00 MB
+
+There was 1 error:
+
+1) DeveloperSubscriberTest::testOnKernelException
+get_class() expects parameter 1 to be object, null given
+
+/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:33
+
+[37;41mERRORS![0m
+[37;41mTests: 10[0m[37;41m, Assertions: 9[0m[37;41m, Errors: 1[0m[37;41m.[0m
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...[31;1mE[0m......                                                        10 / 10 (100%)
+
+Time: 642 ms, Memory: 34.00 MB
+
+There was 1 error:
+
+1) DeveloperSubscriberTest::testOnKernelException
+get_class() expects parameter 1 to be object, null given
+
+/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:33
+
+[37;41mERRORS![0m
+[37;41mTests: 10[0m[37;41m, Assertions: 9[0m[37;41m, Errors: 1[0m[37;41m.[0m
+bash-3.2$ bo[Ko[Kin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...[41;37mF[0m......                                                        10 / 10 (100%)
+
+Time: 651 ms, Memory: 34.00 MB
+
+There was 1 failure:
+
+1) DeveloperSubscriberTest::testOnKernelException
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'Symfony\Component\HttpFoundation\JsonResponse'
++'Mock_ExceptionEvent_99f27133'
+
+/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:33
+
+[37;41mFAILURES![0m
+[37;41mTests: 10[0m[37;41m, Assertions: 10[0m[37;41m, Failures: 1[0m[37;41m.[0m
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...[31;1mE[0m......                                                        10 / 10 (100%)
+
+Time: 666 ms, Memory: 34.00 MB
+
+There was 1 error:
+
+1) DeveloperSubscriberTest::testOnKernelException
+get_class() expects parameter 1 to be object, null given
+
+/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:33
+
+[37;41mERRORS![0m
+[37;41mTests: 10[0m[37;41m, Assertions: 9[0m[37;41m, Errors: 1[0m[37;41m.[0m
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+..........                                                        10 / 10 (100%)
+
+Time: 890 ms, Memory: 34.00 MB
+
+[30;42mOK (10 tests, 10 assertions)[0m
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...DeveloperSubscriberTest.php on line 32:
+Symfony\Component\HttpFoundation\JsonResponse {#4502
+  #data: "{}"
+  #callback: null
+  #encodingOptions: 15
+  +headers: Symfony\Component\HttpFoundation\ResponseHeaderBag {#1117
+    #computedCacheControl: array:2 [
+      "no-cache" => true
+      "private" => true
+    ]
+    #cookies: []
+    #headerNames: array:3 [
+      "cache-control" => "Cache-Control"
+      "date" => "Date"
+      "content-type" => "Content-Type"
+    ]
+    #headers: array:3 [
+      "cache-control" => array:1 [
+        0 => "no-cache, private"
+      ]
+      "date" => array:1 [
+        0 => "Sat, 25 Jan 2020 08:02:44 GMT"
+      ]
+      "content-type" => array:1 [
+        0 => "application/json"
+      ]
+    ]
+    #cacheControl: []
+  }
+  #content: "{}"
+  #version: "1.0"
+  #statusCode: 200
+  #statusText: "OK"
+  #charset: null
+}
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+..........                                                        10 / 10 (100%)
+
+Time: 651 ms, Memory: 34.00 MB
+
+[30;42mOK (10 tests, 10 assertions)[0m
+bash-3.2$ bin/hpp[K[K[Kphpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...[41;37mF[0m......                                                        10 / 10 (100%)
+
+Time: 667 ms, Memory: 34.00 MB
+
+There was 1 failure:
+
+1) DeveloperSubscriberTest::testOnKernelException
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'Symfony\Component\HttpKernel\Event\ExceptionEvent'
++'Mock_ExceptionEvent_987e8790'
+
+/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:33
+
+[37;41mFAILURES![0m
+[37;41mTests: 10[0m[37;41m, Assertions: 10[0m[37;41m, Failures: 1[0m[37;41m.[0m
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...[41;37mF[0m......                                                        10 / 10 (100%)
+
+Time: 648 ms, Memory: 34.00 MB
+
+There was 1 failure:
+
+1) DeveloperSubscriberTest::testOnKernelException
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'Mock_ExceptionEvent_987e8790'
++'Mock_ExceptionEvent_a0c6e190'
+
+/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:33
+
+[37;41mFAILURES![0m
+[37;41mTests: 10[0m[37;41m, Assertions: 10[0m[37;41m, Failures: 1[0m[37;41m.[0m
+bash-3.2$ ph[K[Kbin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+..........                                                        10 / 10 (100%)
+
+Time: 655 ms, Memory: 34.00 MB
+
+[30;42mOK (10 tests, 10 assertions)[0m
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...[31;1mE[0m......                                                        10 / 10 (100%)
+
+Time: 665 ms, Memory: 34.00 MB
+
+There was 1 error:
+
+1) DeveloperSubscriberTest::testOnKernelException
+get_class() expects parameter 1 to be object, null given
+
+/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:33
+
+[37;41mERRORS![0m
+[37;41mTests: 10[0m[37;41m, Assertions: 9[0m[37;41m, Errors: 1[0m[37;41m.[0m
+bash-3.2$ hp[K[Kphpunit[K[K[K[K[K[K[Kbin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...DeveloperSubscriberTest.php on line 33:
+null
+bash-3.2$ bin /phpunit
+bash: bin: command not found
+bash-3.2$ n[Kbin/phpunit
+PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ')' in /Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php on line 31
+
+Parse error: syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ')' in /Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php on line 31
+
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...DeveloperSubscriberTest.php on line 31:
+null
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...[33;1mR[0m......                                                        10 / 10 (100%)
+
+Time: 668 ms, Memory: 34.00 MB
+
+There was 1 risky test:
+
+1) DeveloperSubscriberTest::testOnKernelException
+This test did not perform any assertions
+
+/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:25
+
+[30;43mOK, but incomplete, skipped, or risky tests![0m
+[30;43mTests: 10[0m[30;43m, Assertions: 9[0m[30;43m, Risky: 1[0m[30;43m.[0m
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...DeveloperSubscriberTest.php on line 31:
+null
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...DeveloperSubscriberTest.php on line 31:
+Symfony\Component\HttpFoundation\JsonResponse {#4502
+  #data: "{"status":404,"message":"Resource not found"}"
+  #callback: null
+  #encodingOptions: 15
+  +headers: Symfony\Component\HttpFoundation\ResponseHeaderBag {#1117
+    #computedCacheControl: array:2 [
+      "no-cache" => true
+      "private" => true
+    ]
+    #cookies: []
+    #headerNames: array:3 [
+      "cache-control" => "Cache-Control"
+      "date" => "Date"
+      "content-type" => "Content-Type"
+    ]
+    #headers: array:3 [
+      "cache-control" => array:1 [
+        0 => "no-cache, private"
+      ]
+      "date" => array:1 [
+        0 => "Sat, 25 Jan 2020 08:08:16 GMT"
+      ]
+      "content-type" => array:1 [
+        0 => "application/json"
+      ]
+    ]
+    #cacheControl: []
+  }
+  #content: "{"status":404,"message":"Resource not found"}"
+  #version: "1.0"
+  #statusCode: 200
+  #statusText: "OK"
+  #charset: null
+}
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...DeveloperSubscriberTest.php on line 31:
+Symfony\Component\HttpFoundation\JsonResponse {#4502
+  #data: "{"status":404,"message":"Resource not found"}"
+  #callback: null
+  #encodingOptions: 15
+  +headers: Symfony\Component\HttpFoundation\ResponseHeaderBag {#1117
+    #computedCacheControl: array:2 [
+      "no-cache" => true
+      "private" => true
+    ]
+    #cookies: []
+    #headerNames: array:3 [
+      "cache-control" => "Cache-Control"
+      "date" => "Date"
+      "content-type" => "Content-Type"
+    ]
+    #headers: array:3 [
+      "cache-control" => array:1 [
+        0 => "no-cache, private"
+      ]
+      "date" => array:1 [
+        0 => "Sat, 25 Jan 2020 08:08:58 GMT"
+      ]
+      "content-type" => array:1 [
+        0 => "application/json"
+      ]
+    ]
+    #cacheControl: []
+  }
+  #content: "{"status":404,"message":"Resource not found"}"
+  #version: "1.0"
+  #statusCode: 200
+  #statusText: "OK"
+  #charset: null
+}
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+..........                                                        10 / 10 (100%)
+
+Time: 667 ms, Memory: 34.00 MB
+
+[30;42mOK (10 tests, 10 assertions)[0m
+bash-3.2$ bin/phpunit --filter=testOnKernelException > public resultTest.html
+bash: public: Is a directory
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+..........                                                        10 / 10 (100%)
+
+Time: 665 ms, Memory: 34.00 MB
+
+[30;42mOK (10 tests, 10 assertions)[0m
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+...DeveloperSubscriberTest.php on line 33:
+Symfony\Component\HttpFoundation\JsonResponse {#4502
+  #data: "{"status":404,"message":"Resource not found"}"
+  #callback: null
+  #encodingOptions: 15
+  +headers: Symfony\Component\HttpFoundation\ResponseHeaderBag {#1117
+    #computedCacheControl: array:2 [
+      "no-cache" => true
+      "private" => true
+    ]
+    #cookies: []
+    #headerNames: array:3 [
+      "cache-control" => "Cache-Control"
+      "date" => "Date"
+      "content-type" => "Content-Type"
+    ]
+    #headers: array:3 [
+      "cache-control" => array:1 [
+        0 => "no-cache, private"
+      ]
+      "date" => array:1 [
+        0 => "Sat, 25 Jan 2020 08:12:09 GMT"
+      ]
+      "content-type" => array:1 [
+        0 => "application/json"
+      ]
+    ]
+    #cacheControl: []
+  }
+  #content: "{"status":404,"message":"Resource not found"}"
+  #version: "1.0"
+  #statusCode: 200
+  #statusText: "OK"
+  #charset: null
+}
+bash-3.2$ bin/phpunit
+PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
+
+Testing Project Test Suite
+..........                                                        10 / 10 (100%)
+
+Time: 670 ms, Memory: 34.00 MB
+
+[30;42mOK (10 tests, 10 assertions)[0m
+bash-3.2$ 

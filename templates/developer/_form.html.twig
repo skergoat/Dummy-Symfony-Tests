@@ -1,0 +1,6 @@
+{{ form_start(form) }}
+    {{ form_row(form.name, { attr : { class : 'form-control' }}) }}
+    {{ form_row(form.languages, { attr : { class : 'form-control' }}) }}
+    {{ form_row(form.experience, { attr : { class : 'form-control' }}) }}
+    <button class="btn btn-success" style="margin: 20px;">{{ button_label|default('Save') }}</button>
+{{ form_end(form) }}

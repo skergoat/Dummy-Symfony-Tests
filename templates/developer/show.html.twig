@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Developer{% endblock %}
+
+{% block body %}
+    <h1>Developer</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ developer.id }}</td>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <td>{{ developer.name }}</td>
+            </tr>
+            <tr>
+                <th>Languages</th>
+                <td>{{ developer.languages }}</td>
+            </tr>
+             <tr>
+                <th>Price</th>
+                <td>{{ developer.price }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('developer_index') }}" class="btn btn-warning">back to list</a>
+
+    <a href="{{ path('developer_edit', {'id': developer.id}) }}" class="btn btn-primary">edit</a>
+
+    {{ include('developer/_delete_form.html.twig') }}
+{% endblock %}

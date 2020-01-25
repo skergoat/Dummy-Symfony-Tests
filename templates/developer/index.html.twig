@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Developer index{% endblock %}
+
+{% block body %}
+    <h1>Developer index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Languages</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for developer in developers %}
+            <tr>
+                <td>{{ developer.id }}</td>
+                <td>{{ developer.name }}</td>
+                <td>{{ developer.languages }}</td>
+                <td>{{ developer.price }}</td>
+                <td>
+                    <a href="{{ path('developer_show', {'id': developer.id}) }}" class="btn btn-secondary btn-small">show</a>
+                    <a href="{{ path('developer_edit', {'id': developer.id}) }}" class="btn btn-primary btn-small">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('developer_new') }}" class="btn btn-success">Create new</a>
+{% endblock %}
