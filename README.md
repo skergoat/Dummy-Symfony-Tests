@@ -35,8 +35,6 @@ My first unit and fonctionnal tests on Symfony 5
          
 
 # Run the tests 
-
-8. run 
         
         $ bin/phpunit 
         
