@@ -44,7 +44,7 @@ My first unit and fonctionnal tests on Symfony 5
    
         And add : class ExceptionEvent extends RequestEvent
      
-9. And then : 
+9. And then run : 
         
         $ bin/phpunit 
         
