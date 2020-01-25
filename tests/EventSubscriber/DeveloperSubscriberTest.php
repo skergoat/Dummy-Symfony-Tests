@@ -27,7 +27,7 @@ class DeveloperSubscriberTest extends WebTestCase
 
     // run tests 
     public function testOnKernelException()
-    // {
+    {
     //     $event = $this->event->method("getThrowable")->willReturn($this->throwable);
     //     $throwable = $this->throwable->method("getStatusCode")->willReturn(404);
 
