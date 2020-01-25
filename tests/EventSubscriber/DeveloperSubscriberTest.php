@@ -1,6 +1,6 @@
 <?php
 
-// developed by me
+// developed by me and myself
 
 use App\Service\countDeveloperPrice;
 use App\EventSubscriber\DeveloperSubscriber;
