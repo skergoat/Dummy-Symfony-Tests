@@ -18,7 +18,7 @@ My first unit and fonctionnal tests on Symfony 5
 
          $ bin/console doctrine:database:create 
 
-4. Go to src > Migrations dans remove all migrations if there are some in the repository 
+4. Go to src > Migrations and remove all migrations if there are some in the repository 
 
          
 5. Make migrations 
@@ -42,7 +42,7 @@ My first unit and fonctionnal tests on Symfony 5
    
         remove : final class ExceptionEvent extends RequestEvent
    
-        add : class ExceptionEvent extends RequestEvent
+        And add : class ExceptionEvent extends RequestEvent
      
 9. And then : 
         
