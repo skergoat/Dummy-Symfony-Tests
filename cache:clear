@@ -929,417 +929,215 @@ Testing Project Test Suite
 Time: 670 ms, Memory: 34.00 MB
 
 [30;42mOK (10 tests, 10 assertions)[0m
-bash-3.2$ ./bin/.phpunit/phpunit-7.5-0/src/Framework/MockObject/MockBuilder.php:123 { …}
-    ./tests/EventSubscriber/DeveloperSubscriberTest.php:22 { …}
-    ./bin/.phpunit/phpunit-7.5-0/src/Framework/TestCase.php:839 { …}
-    ./bin/.phpunit/phpunit-7.5-0/src/Framework/TestResult.php:693 { …}
-    ./bin/.phpunit/phpunit-7.5-0/src/Framework/TestCase.php:797 { …}
-    ./bin/.phpunit/phpunit-7.5-0/src/Framework/TestSuite.php:746 { …}
-    ./bin/.phpunit/phpunit-7.5-0/src/Framework/TestSuite.php:746 { …}
-    ./bin/.phpunit/phpunit-7.5-0/src/TextUI/TestRunner.php:652 { …}
-    ./bin/.phpunit/phpunit-7.5-0/src/TextUI/Command.php:206 { …}
-    ./bin/.phpunit/phpunit-7.5-0/src/TextUI/Command.php:162 { …}
-    ./bin/.phpunit/phpunit-7.5-0/phpunit:17 { …}
-    ./vendor/symfony/phpunit-bridge/bin/simple-phpunit.php:302 { …}
-    ./bin/phpunit:13 { …}
-  }
-}
-bash-3.2$ dd[K[Kbin/phpunit
-PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
-
-Testing Project Test Suite
-...DeveloperSubscriberTest.php on line 29:
-PHPUnit\Framework\MockObject\Builder\InvocationMocker {#4503
-  -collection: PHPUnit\Framework\MockObject\InvocationMocker {#4531
-    -matchers: array:1 [
-      0 => PHPUnit\Framework\MockObject\Matcher {#4506
-        -invocationMatcher: PHPUnit\Framework\MockObject\Matcher\AnyInvokedCount {#4507
-          -invocations: []
-        }
-        -afterMatchBuilderId: null
-        -afterMatchBuilderIsInvoked: false
-        -methodNameMatcher: PHPUnit\Framework\MockObject\Matcher\MethodName {#4508
-          -constraint: PHPUnit\Framework\Constraint\IsEqual {#4522
-            -value: "getStatusCode"
-            -delta: 0.0
-            -maxDepth: 10
-            -canonicalize: false
-            -ignoreCase: true
-            #exporter: SebastianBergmann\Exporter\Exporter {#4517}
-          }
-        }
-        -parametersMatcher: null
-        -stub: PHPUnit\Framework\MockObject\Stub\ReturnStub {#4533 …1}
-      }
-    ]
-    -builderMap: []
-    -configurableMethods: array:1 [
-      0 => "getstatuscode"
-    ]
-    -returnValueGeneration: true
-  }
-  -matcher: PHPUnit\Framework\MockObject\Matcher {#4506}
-  -configurableMethods: array:1 [
-    0 => "getstatuscode"
-  ]
-}
-bash-3.2$ bin/phpunit
-PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
-
-Testing Project Test Suite
-...[31;1mE[0m......                                                        10 / 10 (100%)
-
-Time: 656 ms, Memory: 34.00 MB
-
-There was 1 error:
-
-1) DeveloperSubscriberTest::testOnKernelException
-TypeError: Argument 1 passed to App\EventSubscriber\DeveloperSubscriber::onKernelException() must be an instance of Symfony\Component\HttpKernel\Event\ExceptionEvent, string given, called in /Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php on line 31
-
-/Users/stephane/Desktop/tests/src/EventSubscriber/DeveloperSubscriber.php:11
-/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:31
-
-[37;41mERRORS![0m
-[37;41mTests: 10[0m[37;41m, Assertions: 9[0m[37;41m, Errors: 1[0m[37;41m.[0m
-bash-3.2$ bin/phpunit
-PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
-
-Testing Project Test Suite
-...[31;1mE[0m......                                                        10 / 10 (100%)
-
-Time: 657 ms, Memory: 34.00 MB
-
-There was 1 error:
-
-1) DeveloperSubscriberTest::testOnKernelException
-Use of undefined constant ExceptionEvent - assumed 'ExceptionEvent' (this will throw an Error in a future version of PHP)
-
-/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:31
-
-[37;41mERRORS![0m
-[37;41mTests: 10[0m[37;41m, Assertions: 9[0m[37;41m, Errors: 1[0m[37;41m.[0m
-bash-3.2$ bin/phpunit
-PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
-
-Testing Project Test Suite
-...[31;1mE[0m......                                                        10 / 10 (100%)
-
-Time: 647 ms, Memory: 34.00 MB
-
-There was 1 error:
-
-1) DeveloperSubscriberTest::testOnKernelException
-get_class() expects parameter 1 to be object, null given
-
-/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:33
-
-[37;41mERRORS![0m
-[37;41mTests: 10[0m[37;41m, Assertions: 9[0m[37;41m, Errors: 1[0m[37;41m.[0m
-bash-3.2$ bin/phpunit
-PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
-
-Testing Project Test Suite
-...[31;1mE[0m......                                                        10 / 10 (100%)
-
-Time: 649 ms, Memory: 34.00 MB
-
-There was 1 error:
-
-1) DeveloperSubscriberTest::testOnKernelException
-get_class() expects parameter 1 to be object, null given
-
-/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:33
-
-[37;41mERRORS![0m
-[37;41mTests: 10[0m[37;41m, Assertions: 9[0m[37;41m, Errors: 1[0m[37;41m.[0m
-bash-3.2$ bin/phpunit
-PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
-
-Testing Project Test Suite
-...[31;1mE[0m......                                                        10 / 10 (100%)
-
-Time: 642 ms, Memory: 34.00 MB
-
-There was 1 error:
-
-1) DeveloperSubscriberTest::testOnKernelException
-get_class() expects parameter 1 to be object, null given
-
-/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:33
-
-[37;41mERRORS![0m
-[37;41mTests: 10[0m[37;41m, Assertions: 9[0m[37;41m, Errors: 1[0m[37;41m.[0m
-bash-3.2$ bo[Ko[Kin/phpunit
-PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
-
-Testing Project Test Suite
-...[41;37mF[0m......                                                        10 / 10 (100%)
-
-Time: 651 ms, Memory: 34.00 MB
-
-There was 1 failure:
-
-1) DeveloperSubscriberTest::testOnKernelException
-Failed asserting that two strings are equal.
---- Expected
-+++ Actual
-@@ @@
--'Symfony\Component\HttpFoundation\JsonResponse'
-+'Mock_ExceptionEvent_99f27133'
-
-/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:33
-
-[37;41mFAILURES![0m
-[37;41mTests: 10[0m[37;41m, Assertions: 10[0m[37;41m, Failures: 1[0m[37;41m.[0m
-bash-3.2$ bin/phpunit
-PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
-
-Testing Project Test Suite
-...[31;1mE[0m......                                                        10 / 10 (100%)
-
-Time: 666 ms, Memory: 34.00 MB
-
-There was 1 error:
-
-1) DeveloperSubscriberTest::testOnKernelException
-get_class() expects parameter 1 to be object, null given
-
-/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:33
-
-[37;41mERRORS![0m
-[37;41mTests: 10[0m[37;41m, Assertions: 9[0m[37;41m, Errors: 1[0m[37;41m.[0m
-bash-3.2$ bin/phpunit
-PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
-
-Testing Project Test Suite
-..........                                                        10 / 10 (100%)
-
-Time: 890 ms, Memory: 34.00 MB
-
-[30;42mOK (10 tests, 10 assertions)[0m
-bash-3.2$ bin/phpunit
-PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
-
-Testing Project Test Suite
-...DeveloperSubscriberTest.php on line 32:
-Symfony\Component\HttpFoundation\JsonResponse {#4502
-  #data: "{}"
-  #callback: null
-  #encodingOptions: 15
-  +headers: Symfony\Component\HttpFoundation\ResponseHeaderBag {#1117
-    #computedCacheControl: array:2 [
-      "no-cache" => true
-      "private" => true
-    ]
-    #cookies: []
-    #headerNames: array:3 [
-      "cache-control" => "Cache-Control"
-      "date" => "Date"
-      "content-type" => "Content-Type"
-    ]
-    #headers: array:3 [
-      "cache-control" => array:1 [
-        0 => "no-cache, private"
-      ]
-      "date" => array:1 [
-        0 => "Sat, 25 Jan 2020 08:02:44 GMT"
-      ]
-      "content-type" => array:1 [
-        0 => "application/json"
-      ]
-    ]
-    #cacheControl: []
-  }
-  #content: "{}"
-  #version: "1.0"
-  #statusCode: 200
-  #statusText: "OK"
-  #charset: null
-}
-bash-3.2$ bin/phpunit
-PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
-
-Testing Project Test Suite
-..........                                                        10 / 10 (100%)
-
-Time: 651 ms, Memory: 34.00 MB
-
-[30;42mOK (10 tests, 10 assertions)[0m
-bash-3.2$ bin/hpp[K[K[Kphpunit
-PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
-
-Testing Project Test Suite
-...[41;37mF[0m......                                                        10 / 10 (100%)
-
-Time: 667 ms, Memory: 34.00 MB
-
-There was 1 failure:
-
-1) DeveloperSubscriberTest::testOnKernelException
-Failed asserting that two strings are equal.
---- Expected
-+++ Actual
-@@ @@
--'Symfony\Component\HttpKernel\Event\ExceptionEvent'
-+'Mock_ExceptionEvent_987e8790'
-
-/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:33
-
-[37;41mFAILURES![0m
-[37;41mTests: 10[0m[37;41m, Assertions: 10[0m[37;41m, Failures: 1[0m[37;41m.[0m
-bash-3.2$ bin/phpunit
-PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
-
-Testing Project Test Suite
-...[41;37mF[0m......                                                        10 / 10 (100%)
-
-Time: 648 ms, Memory: 34.00 MB
-
-There was 1 failure:
-
-1) DeveloperSubscriberTest::testOnKernelException
-Failed asserting that two strings are equal.
---- Expected
-+++ Actual
-@@ @@
--'Mock_ExceptionEvent_987e8790'
-+'Mock_ExceptionEvent_a0c6e190'
-
-/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:33
-
-[37;41mFAILURES![0m
-[37;41mTests: 10[0m[37;41m, Assertions: 10[0m[37;41m, Failures: 1[0m[37;41m.[0m
-bash-3.2$ ph[K[Kbin/phpunit
-PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
-
-Testing Project Test Suite
-..........                                                        10 / 10 (100%)
-
-Time: 655 ms, Memory: 34.00 MB
-
-[30;42mOK (10 tests, 10 assertions)[0m
-bash-3.2$ bin/phpunit
-PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
-
-Testing Project Test Suite
-...[31;1mE[0m......                                                        10 / 10 (100%)
-
-Time: 665 ms, Memory: 34.00 MB
-
-There was 1 error:
-
-1) DeveloperSubscriberTest::testOnKernelException
-get_class() expects parameter 1 to be object, null given
-
-/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:33
-
-[37;41mERRORS![0m
-[37;41mTests: 10[0m[37;41m, Assertions: 9[0m[37;41m, Errors: 1[0m[37;41m.[0m
-bash-3.2$ hp[K[Kphpunit[K[K[K[K[K[K[Kbin/phpunit
-PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
-
-Testing Project Test Suite
-...DeveloperSubscriberTest.php on line 33:
-null
-bash-3.2$ bin /phpunit
-bash: bin: command not found
-bash-3.2$ n[Kbin/phpunit
-PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ')' in /Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php on line 31
-
-Parse error: syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ')' in /Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php on line 31
-
-bash-3.2$ bin/phpunit
-PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
-
-Testing Project Test Suite
-...DeveloperSubscriberTest.php on line 31:
-null
-bash-3.2$ bin/phpunit
-PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
-
-Testing Project Test Suite
-...[33;1mR[0m......                                                        10 / 10 (100%)
-
-Time: 668 ms, Memory: 34.00 MB
-
-There was 1 risky test:
-
-1) DeveloperSubscriberTest::testOnKernelException
-This test did not perform any assertions
-
-/Users/stephane/Desktop/tests/tests/EventSubscriber/DeveloperSubscriberTest.php:25
-
-[30;43mOK, but incomplete, skipped, or risky tests![0m
-[30;43mTests: 10[0m[30;43m, Assertions: 9[0m[30;43m, Risky: 1[0m[30;43m.[0m
-bash-3.2$ bin/phpunit
-PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
-
-Testing Project Test Suite
-...DeveloperSubscriberTest.php on line 31:
-null
-bash-3.2$ bin/phpunit
-PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
-
-Testing Project Test Suite
-...DeveloperSubscriberTest.php on line 31:
-Symfony\Component\HttpFoundation\JsonResponse {#4502
-  #data: "{"status":404,"message":"Resource not found"}"
-  #callback: null
-  #encodingOptions: 15
-  +headers: Symfony\Component\HttpFoundation\ResponseHeaderBag {#1117
-    #computedCacheControl: array:2 [
-      "no-cache" => true
-      "private" => true
-    ]
-    #cookies: []
-    #headerNames: array:3 [
-      "cache-control" => "Cache-Control"
-      "date" => "Date"
-      "content-type" => "Content-Type"
-    ]
-    #headers: array:3 [
-      "cache-control" => array:1 [
-        0 => "no-cache, private"
-      ]
-      "date" => array:1 [
-        0 => "Sat, 25 Jan 2020 08:08:16 GMT"
-      ]
-      "content-type" => array:1 [
-        0 => "application/json"
-      ]
-    ]
-    #cacheControl: []
-  }
-  #content: "{"status":404,"message":"Resource not found"}"
-  #version: "1.0"
-  #statusCode: 200
-  #statusText: "OK"
-  #charset: null
-}
-bash-3.2$ bin/phpunit
-PHPUnit 7.5.20 by Sebastian Bergmann and contributors.
-
-Testing Project Test Suite
-...DeveloperSubscriberTest.php on line 31:
-Symfony\Component\HttpFoundation\JsonResponse {#4502
-  #data: "{"status":404,"message":"Resource not found"}"
-  #callback: null
-  #encodingOptions: 15
-  +headers: Symfony\Component\HttpFoundation\ResponseHeaderBag {#1117
-    #computedCacheControl: array:2 [
-      "no-cache" => true
-      "private" => true
-    ]
-    #cookies: []
-    #headerNames: array:3 [
-      "cache-control" => "Cache-Control"
-      "date" => "Date"
-      "content-type" => "Content-Type"
-    ]
-    #headers: array:3 [
-      "cache-control" => array:1 [
-        0 => "no-cache, private"
-      ]
+bash-3.2$ git init 
+Initialized empty Git repository in /Users/stephane/Desktop/tests/.git/
+bash-3.2$ git add .
+bash-3.2$ git commit -am ''t'r'a'v'i's' 'f'i'r's't' 'c'o'm'm'i't'
+[master (root-commit) 8665991] travis first commit
+ Committer: Stephane <stephane@MacBook-Pro-de-Stephane.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 128 files changed, 19503 insertions(+)
+ create mode 100644 .env
+ create mode 100644 .env.test
+ create mode 100644 .gitignore
+ create mode 100755 bin/console
+ create mode 100755 bin/phpunit
+ create mode 100644 cache
+ create mode 100644 cache:clear
+ create mode 100644 composer.json
+ create mode 100644 composer.lock
+ create mode 100644 config/bootstrap.php
+ create mode 100644 config/bundles.php
+ create mode 100644 config/packages/cache.yaml
+ create mode 100644 config/packages/dev/debug.yaml
+ create mode 100644 config/packages/dev/easy_log_handler.yaml
+ create mode 100644 config/packages/dev/monolog.yaml
+ create mode 100644 config/packages/dev/web_profiler.yaml
+ create mode 100644 config/packages/doctrine.yaml
+ create mode 100644 config/packages/doctrine_migrations.yaml
+ create mode 100644 config/packages/framework.yaml
+ create mode 100644 config/packages/mailer.yaml
+ create mode 100644 config/packages/notifier.yaml
+ create mode 100644 config/packages/prod/doctrine.yaml
+ create mode 100644 config/packages/prod/monolog.yaml
+ create mode 100644 config/packages/prod/routing.yaml
+ create mode 100644 config/packages/routing.yaml
+ create mode 100644 config/packages/security.yaml
+ create mode 100644 config/packages/sensio_framework_extra.yaml
+ create mode 100644 config/packages/test/framework.yaml
+ create mode 100644 config/packages/test/monolog.yaml
+ create mode 100644 config/packages/test/twig.yaml
+ create mode 100644 config/packages/test/validator.yaml
+ create mode 100644 config/packages/test/web_profiler.yaml
+ create mode 100644 config/packages/translation.yaml
+ create mode 100644 config/packages/twig.yaml
+ create mode 100644 config/packages/validator.yaml
+ create mode 100644 config/routes.yaml
+ create mode 100644 config/routes/annotations.yaml
+ create mode 100644 config/routes/dev/framework.yaml
+ create mode 100644 config/routes/dev/web_profiler.yaml
+ create mode 100644 config/services.yaml
+ create mode 100644 phpunit.xml.dist
+ create mode 100644 public/index.php
+ create mode 100644 public/resultTest.html
+ create mode 100644 public/test-coverage/.css/bootstrap.min.css
+ create mode 100644 public/test-coverage/.css/custom.css
+ create mode 100644 public/test-coverage/.css/nv.d3.min.css
+ create mode 100644 public/test-coverage/.css/octicons.css
+ create mode 100644 public/test-coverage/.css/style.css
+ create mode 100644 public/test-coverage/.icons/file-code.svg
+ create mode 100644 public/test-coverage/.icons/file-directory.svg
+ create mode 100644 public/test-coverage/.js/bootstrap.min.js
+ create mode 100644 public/test-coverage/.js/d3.min.js
+ create mode 100644 public/test-coverage/.js/file.js
+ create mode 100644 public/test-coverage/.js/jquery.min.js
+ create mode 100644 public/test-coverage/.js/nv.d3.min.js
+ create mode 100644 public/test-coverage/.js/popper.min.js
+ create mode 100644 public/test-coverage/Controller/DeveloperController.php.html
+ create mode 100644 public/test-coverage/Controller/dashboard.html
+ create mode 100644 public/test-coverage/Controller/index.html
+ create mode 100644 public/test-coverage/DataFixtures/AppFixtures.php.html
+ create mode 100644 public/test-coverage/DataFixtures/DevloperFixture.php.html
+ create mode 100644 public/test-coverage/DataFixtures/dashboard.html
+ create mode 100644 public/test-coverage/DataFixtures/index.html
+ create mode 100644 public/test-coverage/Entity/Developer.php.html
+ create mode 100644 public/test-coverage/Entity/dashboard.html
+ create mode 100644 public/test-coverage/Entity/index.html
+ create mode 100644 public/test-coverage/Form/DeveloperType.php.html
+ create mode 100644 public/test-coverage/Form/dashboard.html
+ create mode 100644 public/test-coverage/Form/index.html
+ create mode 100644 public/test-coverage/Kernel.php.html
+ create mode 100644 public/test-coverage/Migrations/Version20200124092614.php.html
+ create mode 100644 public/test-coverage/Migrations/Version20200124095504.php.html
+ create mode 100644 public/test-coverage/Migrations/Version20200124100205.php.html
+ create mode 100644 public/test-coverage/Migrations/Version20200124101111.php.html
+ create mode 100644 public/test-coverage/Migrations/Version20200124102038.php.html
+ create mode 100644 public/test-coverage/Migrations/Version20200124103555.php.html
+ create mode 100644 public/test-coverage/Migrations/Version20200124144546.php.html
+ create mode 100644 public/test-coverage/Migrations/dashboard.html
+ create mode 100644 public/test-coverage/Migrations/index.html
+ create mode 100644 public/test-coverage/Repository/DeveloperRepository.php.html
+ create mode 100644 public/test-coverage/Repository/dashboard.html
+ create mode 100644 public/test-coverage/Repository/index.html
+ create mode 100644 public/test-coverage/Service/countDeveloperPrice.php.html
+ create mode 100644 public/test-coverage/Service/dashboard.html
+ create mode 100644 public/test-coverage/Service/index.html
+ create mode 100644 public/test-coverage/dashboard.html
+ create mode 100644 public/test-coverage/index.html
+ create mode 100644 src/Controller/.gitignore
+ create mode 100644 src/Controller/DeveloperController.php
+ create mode 100644 src/Controller/SecurityController.php
+ create mode 100644 src/Controller/api/DevApiController.php
+ create mode 100644 src/DataFixtures/AppFixtures.php
+ create mode 100644 src/DataFixtures/DevloperFixture.php
+ create mode 100644 src/DataFixtures/UserFixture.php
+ create mode 100644 src/Entity/.gitignore
+ create mode 100644 src/Entity/Developer.php
+ create mode 100644 src/Entity/User.php
+ create mode 100644 src/EventSubscriber/DeveloperSubscriber.php
+ create mode 100644 src/Form/DeveloperType.php
+ create mode 100644 src/Kernel.php
+ create mode 100644 src/Migrations/.gitignore
+ create mode 100644 src/Migrations/Version20200124092614.php
+ create mode 100644 src/Migrations/Version20200124095504.php
+ create mode 100644 src/Migrations/Version20200124100205.php
+ create mode 100644 src/Migrations/Version20200124101111.php
+ create mode 100644 src/Migrations/Version20200124102038.php
+ create mode 100644 src/Migrations/Version20200124103555.php
+ create mode 100644 src/Migrations/Version20200124144546.php
+ create mode 100644 src/Migrations/Version20200125010750.php
+ create mode 100644 src/Repository/.gitignore
+ create mode 100644 src/Repository/DeveloperRepository.php
+ create mode 100644 src/Repository/UserRepository.php
+ create mode 100644 src/Security/UserAuthenticator.php
+ create mode 100644 src/Service/countDeveloperPrice.php
+ create mode 100644 symfony.lock
+ create mode 100644 templates/base.html.twig
+ create mode 100644 templates/developer/_delete_form.html.twig
+ create mode 100644 templates/developer/_form.html.twig
+ create mode 100644 templates/developer/edit.html.twig
+ create mode 100644 templates/developer/index.html.twig
+ create mode 100644 templates/developer/new.html.twig
+ create mode 100644 templates/developer/show.html.twig
+ create mode 100644 templates/security/login.html.twig
+ create mode 100644 tests/.gitignore
+ create mode 100644 tests/Controller/developerControllerTest.php
+ create mode 100644 tests/EventSubscriber/DeveloperSubscriberTest.php
+ create mode 100644 tests/Service/countDeveloperPriceTest.php
+ create mode 100644 translations/.gitignore
+bash-3.2$ cd /users/stephane/desktop
+bash-3.2$ git rmote [1@e[C[C[C[C[C a d d [C o r i g i n [C h t t p s : / / g i t h u b . c o m / s k e r g o a t / D u m m y - S y m f o n y - T e s t - . g i t 
+fatal: not a git repository (or any of the parent directories): .git
+bash-3.2$ git rmote [K[K[K[K[Kemote add origin https://github.com/skergoat/Dummy-Symfony-Test-.git
+fatal: not a git repository (or any of the parent directories): .git
+bash-3.2$ git remote add origin https://github.com/skergoat/Dummy-Symfony-Test-.git
+fatal: not a git repository (or any of the parent directories): .git
+bash-3.2$ git [K[K[K[Kcd tests
+bash-3.2$ git remote origin [C[1@ [1@a[1@d[1@d[C[1@ [C[C[C[C[C[1P[C[C[C[C[C[C[C[C h t t p s : / / g i t h u b . c o m / s k e r g o a t / D u m m y - S y m f o n y - T e s t s - . g i t 
+bash-3.2$ git pull origin msster [K[K[K[K[K[Kaster
+warning: no common commits
+remote: Enumerating objects: 3, done.[K
+remote: Counting objects:  33% (1/3)[Kremote: Counting objects:  66% (2/3)[Kremote: Counting objects: 100% (3/3)[Kremote: Counting objects: 100% (3/3), done.[K
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0[K
+Unpacking objects:  33% (1/3)   Unpacking objects:  66% (2/3)   Unpacking objects: 100% (3/3)   Unpacking objects: 100% (3/3), done.
+From https://github.com/skergoat/Dummy-Symfony-Tests-
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+fatal: refusing to merge unrelated histories
+bash-3.2$ git push origin master
+To https://github.com/skergoat/Dummy-Symfony-Tests-.git
+ [31m! [rejected]       [m master -> master (non-fast-forward)
+[31merror: failed to push some refs to 'https://github.com/skergoat/Dummy-Symfony-Tests-.git'
+[m[33mhint: Updates were rejected because the tip of your current branch is behind[m
+[33mhint: its remote counterpart. Integrate the remote changes (e.g.[m
+[33mhint: 'git pull ...') before pushing again.[m
+[33mhint: See the 'Note about fast-forwards' in 'git push --help' for details.[m
+bash-3.2$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+bash-3.2$ git pull origin master  --allow-unrelated-histories
+From https://github.com/skergoat/Dummy-Symfony-Tests-
+ * branch            master     -> FETCH_HEAD
+hint: Waiting for your editor to close the file... [?2004h[?1049h[?1h=[?2004h[1;15r[?12h[?12l[27m[29m[m[H[2J[?25l[15;1H"~/Desktop/tests/.git/MERGE_MSG" 7L, 301C[2;1H▽[6n[2;1H  [1;1H[>c]11;?[1;1HMerge branch 'master' of https://github.com/skergoat/Dummy-Symfony-Tests-
+
+# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.
+[94m~                                                                                                                                                      [9;1H~                                                                                                                                                      [10;1H~                                                                                                                                                      [11;1H~                                                                                                                                                      [12;1H~                                                                                                                                                      [13;1H~                                                                                                                                                      [14;1H~                                                                                                                                                      [1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?12$p
+
+
+
+
+
+[?25l[m[15;1HType  :qa!  and press <Enter> to abandon all changes and exit Vim[7;1H[?25h[6;1H[5;1H[4;1H
+
+
+[6;1H[5;1H[4;1H[3;1H[2;1H
+# [?25l[15;1H[1m-- INSERT --[m[15;13H[K[4;14r[4;1H[L[1;15r[4;1H[?25h[?25l[3;14r[14;1H
+[1;15r[3;1H# Please enter a commit message to explain why this merge is necessary,[14;1H[94m~                                                                                                                                                      [3;72H[?25h[2;1H[3;72H[4;67H
+[m#[6;71H[7;14H[?25l[8;1H[K[8;1H[?25h[?25lh[?25h[?25le[?25h[?25ll[?25h[?25ll[?25h[?25lo[?25h[?25l[8;5H[K[8;5H[?25h[?25l[8;4H[K[8;4H[?25h[?25l[8;3H[K[8;3H[?25h[?25l[8;2H[K[8;2H[?25h[?25l[8;1H[K[8;1H[?25h[?25l[9;1H[K[9;1H[?25h[?25lf[?25h[?25li[?25h[?25lr[?25h[?25ls[?25h[?25lt[?25h[?25l [?25h[?25lc[?25h[?25lo[?25h[?25lm[?25h[?25lm[?25h[?25li[?25h[?25lt[?25h[?25l [?25h[?25l[10;1H[K[10;1H[?25h[?25l[11;1H[K[11;1H[?25h[?25l[12;1H[K[12;1H[?25h[?25l[13;1H[K[13;1H[?25h[?25l[14;1H[K[14;1H[?25h[?25l[1;14r[14;1H
+[1;15r[14;1H[?25h[?25l[15;1H[K[14;1H[?25h]
       "date" => array:1 [
         0 => "Sat, 25 Jan 2020 08:08:58 GMT"
       ]
@@ -1423,4 +1221,230 @@ Testing Project Test Suite
 Time: 670 ms, Memory: 34.00 MB
 
 [30;42mOK (10 tests, 10 assertions)[0m
-bash-3.2$ 
+bash-3.2$ git init 
+Initialized empty Git repository in /Users/stephane/Desktop/tests/.git/
+bash-3.2$ git add .
+bash-3.2$ git commit -am ''t'r'a'v'i's' 'f'i'r's't' 'c'o'm'm'i't'
+[master (root-commit) 8665991] travis first commit
+ Committer: Stephane <stephane@MacBook-Pro-de-Stephane.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 128 files changed, 19503 insertions(+)
+ create mode 100644 .env
+ create mode 100644 .env.test
+ create mode 100644 .gitignore
+ create mode 100755 bin/console
+ create mode 100755 bin/phpunit
+ create mode 100644 cache
+ create mode 100644 cache:clear
+ create mode 100644 composer.json
+ create mode 100644 composer.lock
+ create mode 100644 config/bootstrap.php
+ create mode 100644 config/bundles.php
+ create mode 100644 config/packages/cache.yaml
+ create mode 100644 config/packages/dev/debug.yaml
+ create mode 100644 config/packages/dev/easy_log_handler.yaml
+ create mode 100644 config/packages/dev/monolog.yaml
+ create mode 100644 config/packages/dev/web_profiler.yaml
+ create mode 100644 config/packages/doctrine.yaml
+ create mode 100644 config/packages/doctrine_migrations.yaml
+ create mode 100644 config/packages/framework.yaml
+ create mode 100644 config/packages/mailer.yaml
+ create mode 100644 config/packages/notifier.yaml
+ create mode 100644 config/packages/prod/doctrine.yaml
+ create mode 100644 config/packages/prod/monolog.yaml
+ create mode 100644 config/packages/prod/routing.yaml
+ create mode 100644 config/packages/routing.yaml
+ create mode 100644 config/packages/security.yaml
+ create mode 100644 config/packages/sensio_framework_extra.yaml
+ create mode 100644 config/packages/test/framework.yaml
+ create mode 100644 config/packages/test/monolog.yaml
+ create mode 100644 config/packages/test/twig.yaml
+ create mode 100644 config/packages/test/validator.yaml
+ create mode 100644 config/packages/test/web_profiler.yaml
+ create mode 100644 config/packages/translation.yaml
+ create mode 100644 config/packages/twig.yaml
+ create mode 100644 config/packages/validator.yaml
+ create mode 100644 config/routes.yaml
+ create mode 100644 config/routes/annotations.yaml
+ create mode 100644 config/routes/dev/framework.yaml
+ create mode 100644 config/routes/dev/web_profiler.yaml
+ create mode 100644 config/services.yaml
+ create mode 100644 phpunit.xml.dist
+ create mode 100644 public/index.php
+ create mode 100644 public/resultTest.html
+ create mode 100644 public/test-coverage/.css/bootstrap.min.css
+ create mode 100644 public/test-coverage/.css/custom.css
+ create mode 100644 public/test-coverage/.css/nv.d3.min.css
+ create mode 100644 public/test-coverage/.css/octicons.css
+ create mode 100644 public/test-coverage/.css/style.css
+ create mode 100644 public/test-coverage/.icons/file-code.svg
+ create mode 100644 public/test-coverage/.icons/file-directory.svg
+ create mode 100644 public/test-coverage/.js/bootstrap.min.js
+ create mode 100644 public/test-coverage/.js/d3.min.js
+ create mode 100644 public/test-coverage/.js/file.js
+ create mode 100644 public/test-coverage/.js/jquery.min.js
+ create mode 100644 public/test-coverage/.js/nv.d3.min.js
+ create mode 100644 public/test-coverage/.js/popper.min.js
+ create mode 100644 public/test-coverage/Controller/DeveloperController.php.html
+ create mode 100644 public/test-coverage/Controller/dashboard.html
+ create mode 100644 public/test-coverage/Controller/index.html
+ create mode 100644 public/test-coverage/DataFixtures/AppFixtures.php.html
+ create mode 100644 public/test-coverage/DataFixtures/DevloperFixture.php.html
+ create mode 100644 public/test-coverage/DataFixtures/dashboard.html
+ create mode 100644 public/test-coverage/DataFixtures/index.html
+ create mode 100644 public/test-coverage/Entity/Developer.php.html
+ create mode 100644 public/test-coverage/Entity/dashboard.html
+ create mode 100644 public/test-coverage/Entity/index.html
+ create mode 100644 public/test-coverage/Form/DeveloperType.php.html
+ create mode 100644 public/test-coverage/Form/dashboard.html
+ create mode 100644 public/test-coverage/Form/index.html
+ create mode 100644 public/test-coverage/Kernel.php.html
+ create mode 100644 public/test-coverage/Migrations/Version20200124092614.php.html
+ create mode 100644 public/test-coverage/Migrations/Version20200124095504.php.html
+ create mode 100644 public/test-coverage/Migrations/Version20200124100205.php.html
+ create mode 100644 public/test-coverage/Migrations/Version20200124101111.php.html
+ create mode 100644 public/test-coverage/Migrations/Version20200124102038.php.html
+ create mode 100644 public/test-coverage/Migrations/Version20200124103555.php.html
+ create mode 100644 public/test-coverage/Migrations/Version20200124144546.php.html
+ create mode 100644 public/test-coverage/Migrations/dashboard.html
+ create mode 100644 public/test-coverage/Migrations/index.html
+ create mode 100644 public/test-coverage/Repository/DeveloperRepository.php.html
+ create mode 100644 public/test-coverage/Repository/dashboard.html
+ create mode 100644 public/test-coverage/Repository/index.html
+ create mode 100644 public/test-coverage/Service/countDeveloperPrice.php.html
+ create mode 100644 public/test-coverage/Service/dashboard.html
+ create mode 100644 public/test-coverage/Service/index.html
+ create mode 100644 public/test-coverage/dashboard.html
+ create mode 100644 public/test-coverage/index.html
+ create mode 100644 src/Controller/.gitignore
+ create mode 100644 src/Controller/DeveloperController.php
+ create mode 100644 src/Controller/SecurityController.php
+ create mode 100644 src/Controller/api/DevApiController.php
+ create mode 100644 src/DataFixtures/AppFixtures.php
+ create mode 100644 src/DataFixtures/DevloperFixture.php
+ create mode 100644 src/DataFixtures/UserFixture.php
+ create mode 100644 src/Entity/.gitignore
+ create mode 100644 src/Entity/Developer.php
+ create mode 100644 src/Entity/User.php
+ create mode 100644 src/EventSubscriber/DeveloperSubscriber.php
+ create mode 100644 src/Form/DeveloperType.php
+ create mode 100644 src/Kernel.php
+ create mode 100644 src/Migrations/.gitignore
+ create mode 100644 src/Migrations/Version20200124092614.php
+ create mode 100644 src/Migrations/Version20200124095504.php
+ create mode 100644 src/Migrations/Version20200124100205.php
+ create mode 100644 src/Migrations/Version20200124101111.php
+ create mode 100644 src/Migrations/Version20200124102038.php
+ create mode 100644 src/Migrations/Version20200124103555.php
+ create mode 100644 src/Migrations/Version20200124144546.php
+ create mode 100644 src/Migrations/Version20200125010750.php
+ create mode 100644 src/Repository/.gitignore
+ create mode 100644 src/Repository/DeveloperRepository.php
+ create mode 100644 src/Repository/UserRepository.php
+ create mode 100644 src/Security/UserAuthenticator.php
+ create mode 100644 src/Service/countDeveloperPrice.php
+ create mode 100644 symfony.lock
+ create mode 100644 templates/base.html.twig
+ create mode 100644 templates/developer/_delete_form.html.twig
+ create mode 100644 templates/developer/_form.html.twig
+ create mode 100644 templates/developer/edit.html.twig
+ create mode 100644 templates/developer/index.html.twig
+ create mode 100644 templates/developer/new.html.twig
+ create mode 100644 templates/developer/show.html.twig
+ create mode 100644 templates/security/login.html.twig
+ create mode 100644 tests/.gitignore
+ create mode 100644 tests/Controller/developerControllerTest.php
+ create mode 100644 tests/EventSubscriber/DeveloperSubscriberTest.php
+ create mode 100644 tests/Service/countDeveloperPriceTest.php
+ create mode 100644 translations/.gitignore
+bash-3.2$ cd /users/stephane/desktop
+bash-3.2$ git rmote [1@e[C[C[C[C[C a d d [C o r i g i n [C h t t p s : / / g i t h u b . c o m / s k e r g o a t / D u m m y - S y m f o n y - T e s t - . g i t 
+fatal: not a git repository (or any of the parent directories): .git
+bash-3.2$ git rmote [K[K[K[K[Kemote add origin https://github.com/skergoat/Dummy-Symfony-Test-.git
+fatal: not a git repository (or any of the parent directories): .git
+bash-3.2$ git remote add origin https://github.com/skergoat/Dummy-Symfony-Test-.git
+fatal: not a git repository (or any of the parent directories): .git
+bash-3.2$ git [K[K[K[Kcd tests
+bash-3.2$ git remote origin [C[1@ [1@a[1@d[1@d[C[1@ [C[C[C[C[C[1P[C[C[C[C[C[C[C[C h t t p s : / / g i t h u b . c o m / s k e r g o a t / D u m m y - S y m f o n y - T e s t s - . g i t 
+bash-3.2$ git pull origin msster [K[K[K[K[K[Kaster
+warning: no common commits
+remote: Enumerating objects: 3, done.[K
+remote: Counting objects:  33% (1/3)[Kremote: Counting objects:  66% (2/3)[Kremote: Counting objects: 100% (3/3)[Kremote: Counting objects: 100% (3/3), done.[K
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0[K
+Unpacking objects:  33% (1/3)   Unpacking objects:  66% (2/3)   Unpacking objects: 100% (3/3)   Unpacking objects: 100% (3/3), done.
+From https://github.com/skergoat/Dummy-Symfony-Tests-
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+fatal: refusing to merge unrelated histories
+bash-3.2$ git push origin master
+To https://github.com/skergoat/Dummy-Symfony-Tests-.git
+ [31m! [rejected]       [m master -> master (non-fast-forward)
+[31merror: failed to push some refs to 'https://github.com/skergoat/Dummy-Symfony-Tests-.git'
+[m[33mhint: Updates were rejected because the tip of your current branch is behind[m
+[33mhint: its remote counterpart. Integrate the remote changes (e.g.[m
+[33mhint: 'git pull ...') before pushing again.[m
+[33mhint: See the 'Note about fast-forwards' in 'git push --help' for details.[m
+bash-3.2$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+bash-3.2$ git pull origin master  --allow-unrelated-histories
+From https://github.com/skergoat/Dummy-Symfony-Tests-
+ * branch            master     -> FETCH_HEAD
+hint: Waiting for your editor to close the file... [?2004h[?1049h[?1h=[?2004h[1;15r[?12h[?12l[27m[29m[m[H[2J[?25l[15;1H"~/Desktop/tests/.git/MERGE_MSG" 7L, 301C[2;1H▽[6n[2;1H  [1;1H[>c]11;?[1;1HMerge branch 'master' of https://github.com/skergoat/Dummy-Symfony-Tests-
+
+# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.
+[94m~                                                                                                                                                      [9;1H~                                                                                                                                                      [10;1H~                                                                                                                                                      [11;1H~                                                                                                                                                      [12;1H~                                                                                                                                                      [13;1H~                                                                                                                                                      [14;1H~                                                                                                                                                      [1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?12$p
+
+
+
+
+
+[?25l[m[15;1HType  :qa!  and press <Enter> to abandon all changes and exit Vim[7;1H[?25h[6;1H[5;1H[4;1H
+
+
+[6;1H[5;1H[4;1H[3;1H[2;1H
+# [?25l[15;1H[1m-- INSERT --[m[15;13H[K[4;14r[4;1H[L[1;15r[4;1H[?25h[?25l[3;14r[14;1H
+[1;15r[3;1H# Please enter a commit message to explain why this merge is necessary,[14;1H[94m~                                                                                                                                                      [3;72H[?25h[2;1H[3;72H[4;67H
+[m#[6;71H[7;14H[?25l[8;1H[K[8;1H[?25h[?25lh[?25h[?25le[?25h[?25ll[?25h[?25ll[?25h[?25lo[?25h[?25l[8;5H[K[8;5H[?25h[?25l[8;4H[K[8;4H[?25h[?25l[8;3H[K[8;3H[?25h[?25l[8;2H[K[8;2H[?25h[?25l[8;1H[K[8;1H[?25h[?25l[9;1H[K[9;1H[?25h[?25lf[?25h[?25li[?25h[?25lr[?25h[?25ls[?25h[?25lt[?25h[?25l [?25h[?25lc[?25h[?25lo[?25h[?25lm[?25h[?25lm[?25h[?25li[?25h[?25lt[?25h[?25l [?25h[?25l[10;1H[K[10;1H[?25h[?25l[11;1H[K[11;1H[?25h[?25l[12;1H[K[12;1H[?25h[?25l[13;1H[K[13;1H[?25h[?25l[14;1H[K[14;1H[?25h[?25l[1;14r[14;1H
+[1;15r[14;1H[?25h[?25l[15;1H[K[14;1H[?25h[13;1H[12;1H[11;1H[10;1H[9;1H[8;1H[7;1H[6;1H[5;1H[4;1H[3;1H[2;1H[1;1H[?25l[1;14r[1;1H[L[1;15r[1;1HMerge branch 'master' of https://github.com/skergoat/Dummy-Symfony-Tests-[?25h
+
+
+
+
+
+
+
+
+
+
+
+
+[?25l[1;14r[14;1H
+[1;15r[14;1H[?25h
+
+[?2004l[?1l>[?1049l[?2004l
+[1]+  Stopped                 git pull origin master --allow-unrelated-histories
+bash-3.2$ git push origin master
